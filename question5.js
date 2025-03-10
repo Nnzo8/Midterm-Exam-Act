@@ -4,7 +4,7 @@ const app = express();
 const port = 3001;
 
 // Sequelize connection
-const sequelize = new Sequelize('mysql://root:@localhost:3306/mydatabase'); // No password
+const sequelize = new Sequelize('mysql://root:@localhost:3306/database'); // No password
 
 // Define the User model
 const User = sequelize.define('User', {
