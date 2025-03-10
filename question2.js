@@ -1,6 +1,10 @@
+const prompt = require('prompt-sync')();//for input module
+
 function reverseString(str) {
     return str.split('').reverse().join('');
 }
 
-// Example usage
-console.log(reverseString("hello")); //reverses hello
+// Take input from the user
+const inputString = prompt('Enter a string to reverse: ');
+const reversedString = reverseString(inputString);
+console.log('Reversed string:', reversedString);
