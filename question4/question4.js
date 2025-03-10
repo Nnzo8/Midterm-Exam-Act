@@ -42,11 +42,11 @@ function editTasks (index) {
     }
 }
 
-// Function to delete a todo
+// Function to delete a task
 function deleteTasks (index) {
     if (confirm( 'Are you sure you want to delete this task?')) {
         crudtask.splice (index, 1);
-        renderTodos ();
+        renderTasks ();
     }
 }
 
